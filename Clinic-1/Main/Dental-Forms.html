@@ -1,0 +1,248 @@
+<!--This is a school project of CS-2 students for a clinic.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clinic System [SJBCNL]</title>
+   
+   <link rel="stylesheet" href="../CSS/Dental-Form-Design.css">
+</head>
+
+<body>
+  <div class="app">
+    <!-- SIDEBAR -->
+    <aside id="sidebar" class="sidebar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"> <!--When you link the logo, we must go to user profile.-->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2l3.5 6.5L22 10l-6.5 3.5L12 20l-3.5-6.5L2 10l6.5-1.5L12 2z" fill="white" opacity=".9"/>
+          </svg>
+        </div>
+        <div>
+          <div>Clinic<span style="color:#93c5fd"> System</span></div>
+          <small>Leadership, Excellence and Service</small>
+        </div>
+      </div>
+
+      <div class="side-search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21l-4.35-4.35" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round"/><circle cx="11" cy="11" r="7" stroke="#cbd5e1" stroke-width="2"/></svg>
+        <input type="text" placeholder="Search menu…"/>
+      </div>
+
+      <nav>
+        <div class="nav-group">
+          <div class="nav-title">MAIN</div>
+          <a class="nav-item active" href="Dashboard-Main.html">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12l9-8 9 8v8a2 2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2v-8z" stroke="#93c5fd" stroke-width="2"/></svg>
+            <span>Dashboard</span> <!--Homepage/Mainpage-->
+        <a class="nav-item" href="Medical-Forms.html">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="6" rx="2" stroke="#a7f3d0" stroke-width="2"/><rect x="3" y="14" width="18" height="6" rx="2" stroke="#a7f3d0" stroke-width="2"/></svg>
+            <span>Medical Forms</span> <!--Does not need sub menu, just like the dashboard. make a striking UI and max functionability-->
+          </a>
+        <a class="nav-item" href="Dental-Forms.html">
+             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 7h16M4 12h16M4 17h10" stroke="#fbcfe8" stroke-width="2" stroke-linecap="round"/></svg>
+            <span>Dental Forms</span> <!--Does not need sub menu, just like the dashboard. make a striking UI and max functionability-->
+          </a>
+          <div class="nav-title">MISC</div>
+          <details open>
+            <summary class="nav-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 7h10M7 12h10M7 17h6" stroke="#a5b4fc" stroke-width="2" stroke-linecap="round"/></svg> 
+              <span>Student Contacts</span>
+            </summary>
+            <div class="submenu">
+              <a href="#">Student Profile</a> <!--Specific Student Informations.-->
+              <a href="#">Guardian Contact Num</a> <!--Emergency-->
+              <a href="#">Emergency</a> <!-- Local Ambulance and Hospital Contact Number. one with reports.-->
+            </div>
+          </details>
+          <details>
+            <summary class="nav-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="6" rx="2" stroke="#a7f3d0" stroke-width="2"/><rect x="3" y="14" width="18" height="6" rx="2" stroke="#a7f3d0" stroke-width="2"/></svg>
+              <span>Student Categories</span>
+            </summary>
+            <div class="submenu">
+              <a href="#">New Students</a> <!-- First year and Transferees.-->
+              <a href="#">Old Students</a> <!-- Second year till Fourt year. -->
+              <a href="#">Sort in Courses</a> <!-- Basic Education Grade 10-12, Computer Science 1-4 year, Criminology 1-4 year, Hospitality and Management 1-4 year.-->
+            </div>
+          </details>
+          <details>
+            <summary class="nav-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="#fde68a" stroke-width="2"/><path d="M12 7v5l3 3" stroke="#fde68a" stroke-width="2" stroke-linecap="round"/></svg>
+              <span>Reports</span>
+            </summary>
+            <div class="submenu">
+              <a href="#">Notepad</a> <!--to store reports.-->
+              <a href="#">Severe Cases</a> <!--Details of a student with a severe injury.-->
+              <a href="#">Emergency</a> <!-- Local Ambulance and Hospital Contact Number.-->
+            </div>
+          </details>
+          <details>
+            <summary class="nav-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v6M12 16v6M2 12h6M16 12h6" stroke="#93c5fd" stroke-width="2" stroke-linecap="round"/></svg>
+              <span>Administration</span>
+            </summary>
+            <div class="submenu">
+              <a href="#">Users</a> <!--User Profile-->
+              <a href="#">Terms & Privacy</a> <!--Just design and fill it with Lorem ipsum-->
+              <a href="#">System Settings</a> <!--Customization-->
+            </div>
+          </details>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <section class="main">
+      <header class="topbar">
+        <button id="toggle" class="icon-btn toggle" aria-label="Toggle sidebar">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16M4 18h16" stroke="#334155" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <div class="search" role="search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21l-4.35-4.35" stroke="#64748b" stroke-width="2" stroke-linecap="round"/><circle cx="11" cy="11" r="7" stroke="#64748b" stroke-width="2"/></svg>
+          <input type="search" placeholder="Search patients, invoices, labs…" />
+        </div>
+        <div class="actions">
+          <button class="icon-btn" title="Notifications">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 8a6 6 0 10-12 0c0 7-3 7-3 7h18s-3 0-3-7" stroke="#334155" stroke-width="2"/><path d="M9.5 19a2.5 2.5 0 005 0" stroke="#334155" stroke-width="2"/></svg>
+          </button>
+          <button class="icon-btn" title="Help">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="#334155" stroke-width="2"/><path d="M9.5 9a2.5 2.5 0 015 0c0 2-2.5 2-2.5 4" stroke="#334155" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="17" r="1" fill="#334155"/></svg>
+          </button>
+          <div class="user">
+            <a href="User-Profile.html"></a>
+            <div class="avatar">P</div>
+          </div>
+        </div>
+      </header>
+
+      <div class="medical-forms">
+  <h1 class="title">🏥 Student Dental Records</h1>
+  <p class="subtitle">Organized by Course and Year Level</p>
+
+  <!-- Add Record Button -->
+  <div class="controls">
+    <button id="addNewBtn">➕ Add New Record</button>
+  </div>
+
+  <!-- COURSE SECTIONS -->
+  <div class="course-section">
+    <h2>💻 BS Computer Science</h2>
+    <div class="year-groups">
+      <details open>
+        <summary>1st Year</summary>
+        <table class="records-table" id="CS1"></table>
+      </details>
+
+      <details>
+        <summary>2nd Year</summary>
+        <table class="records-table" id="CS2"></table>
+      </details>
+
+      <details>
+        <summary>3rd Year</summary>
+        <table class="records-table" id="CS3"></table>
+      </details>
+
+      <details>
+        <summary>4th Year</summary>
+        <table class="records-table" id="CS4"></table>
+      </details>
+    </div>
+  </div>
+
+  <div class="course-section">
+    <h2>🛡️ BS Criminology</h2>
+    <div class="year-groups">
+      <details>
+        <summary>1st Year</summary>
+        <table class="records-table" id="Crim1"></table>
+      </details>
+      <details>
+        <summary>2nd Year</summary>
+        <table class="records-table" id="Crim2"></table>
+      </details>
+      <details>
+        <summary>3rd Year</summary>
+        <table class="records-table" id="Crim3"></table>
+      </details>
+      <details>
+        <summary>4th Year</summary>
+        <table class="records-table" id="Crim4"></table>
+      </details>
+    </div>
+  </div>
+
+  <div class="course-section">
+    <h2>🍳 Hospitality Management</h2>
+    <div class="year-groups">
+      <details>
+        <summary>1st Year</summary>
+        <table class="records-table" id="HM1"></table>
+      </details>
+      <details>
+        <summary>2nd Year</summary>
+        <table class="records-table" id="HM2"></table>
+      </details>
+      <details>
+        <summary>3rd Year</summary>
+        <table class="records-table" id="HM3"></table>
+      </details>
+      <details>
+        <summary>4th Year</summary>
+        <table class="records-table" id="HM4"></table>
+      </details>
+    </div>
+  </div>
+
+  <!-- Form Modal -->
+  <div class="form-modal" id="formModal">
+    <div class="form-container">
+      <h3 id="formTitle">Add New Record</h3>
+      <form id="medicalForm">
+        <label>Student ID:</label>
+        <input type="text" id="studentId" required>
+
+        <label>Full Name:</label>
+        <input type="text" id="studentName" required>
+
+        <label>Course:</label>
+        <select id="course" required>
+          <option value="">Select Course</option>
+          <option value="CS">BS Computer Science</option>
+          <option value="Crim">BS Criminology</option>
+          <option value="HM">Hospitality Management</option>
+        </select>
+
+        <label>Year Level:</label>
+        <select id="year" required>
+          <option value="">Select Year</option>
+          <option value="1">1st Year</option>
+          <option value="2">2nd Year</option>
+          <option value="3">3rd Year</option>
+          <option value="4">4th Year</option>
+        </select>
+
+        <label>Blood Type:</label>
+        <input type="text" id="bloodType">
+
+        <label>Allergies:</label>
+        <input type="text" id="allergies">
+
+        <label>Emergency Contact:</label>
+        <input type="text" id="emergencyContact">
+
+        <div class="form-actions">
+          <button type="submit" class="save-btn">💾 Save</button>
+          <button type="button" class="cancel-btn" id="cancelBtn">✖ Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+  <script src="../Javascript/Dental-Forms.js"></script>
+</body>
+</html>
