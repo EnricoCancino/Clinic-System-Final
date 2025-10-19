@@ -285,6 +285,24 @@
 
       <!--Put codes here!-->
       
-  <script src="../Javascript/Dashboard-Main.js"></script>
+<script>
+// Sidebar toggle for mobile
+    const toggleBtn = document.getElementById('toggle');
+    const sidebar = document.getElementById('sidebar');
+    toggleBtn?.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+      document.body.classList.toggle('sidebar-open');
+    });
+
+    // Close sidebar when clicking outside on mobile
+    document.addEventListener('click', (e) => {
+      if(window.innerWidth > 900) return;
+      const isClickInside = sidebar.contains(e.target) || toggleBtn.contains(e.target);
+      if(!isClickInside && sidebar.classList.contains('open')){
+        sidebar.classList.remove('open');
+        document.body.classList.remove('sidebar-open');
+      }
+    });
+</script>
 </body>
 </html>
